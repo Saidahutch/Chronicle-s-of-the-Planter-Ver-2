@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
@@ -13,14 +14,23 @@ public class MovementController : MonoBehaviour
     
     void Start()
     {
+        string[] game = {"Chronicle's of the Planter is an indie game", "It teaches people about plants benifits", "You play as a little gardner who is trying to fill in their garden"};
+        for (int i = 0; i < game.Length; i++){
+            Console.WriteLine(game[i]);
+            
+        }
       rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
     //    move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")); 
-
+        Console.WriteLine("demo");
     //     flip();
+      string [] game = {"Chronicle's of the Planter is an indie game", "It teaches people about plants benifits", "You play as a little gardner who is trying to fill in their garden"};
+        for (int i = 0; i < game.Length; i++){
+            Console.WriteLine(game[i]);
+        }
 
         float horizontalInput = Input.GetAxis("Horizontal");
 
